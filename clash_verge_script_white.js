@@ -146,32 +146,30 @@ const ruleProviders = {
 // 规则
 const rules = [
   // 自定义规则
-  "DOMAIN-SUFFIX,googleapis.cn,节点选择", // Google服务
+  "DOMAIN-SUFFIX,googleapis.com,节点选择", // Google服务
   "DOMAIN-SUFFIX,gstatic.com,节点选择", // Google静态资源
   "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择", // Google Play下载服务
   "DOMAIN-SUFFIX,github.io,节点选择", // Github Pages
   "DOMAIN,v2rayse.com,节点选择", // V2rayse节点工具
-  "DOMAIN,yacd.haishan.me,DIRECT", 
-  "DOMAIN,clash.razord.top,DIRECT", 
+  "DOMAIN,yacd.haishan.me,节点选择",
+  "DOMAIN,clash.razord.top,节点选择",
   // blackmatrix7 规则集
   "RULE-SET,openai,ChatGPT",
-  // Loyalsoldier 规则集
-  "RULE-SET,applications,DIRECT",
-  "RULE-SET,private,DIRECT",
-  "RULE-SET,reject,REJECT",
-  "RULE-SET,icloud,微软服务",
-  "RULE-SET,apple,苹果服务",
-  "RULE-SET,google,谷歌服务",
   "RULE-SET,proxy,节点选择",
-  "RULE-SET,gfw,节点选择",
   "RULE-SET,tld-not-cn,节点选择",
-  "RULE-SET,direct,全局直连",
-  "RULE-SET,lancidr,全局直连,no-resolve",
-  "RULE-SET,cncidr,全局直连,no-resolve",
+  "RULE-SET,gfw,节点选择",
   "RULE-SET,telegramcidr,电报消息,no-resolve",
-  // 其他规则
-  "GEOIP,LAN,全局直连,no-resolve",
-  "GEOIP,CN,全局直连,no-resolve",
+  "RULE-SET,reject,REJECT",
+  "RULE-SET,apple,DIRECT",
+  "RULE-SET,direct,DIRECT",
+  "RULE-SET,private,DIRECT",
+  "RULE-SET,applications,DIRECT",
+  "RULE-SET,cncidr,DIRECT,no-resolve",
+  "RULE-SET,lancidr,DIRECT,no-resolve",
+  "GEOIP,LAN,DIRECT,no-resolve",
+  "GEOIP,CN,DIRECT,no-resolve",
+  "GEOIP,US,节点选择,no-resolve",
+  "GEOIP,SG,节点选择,no-resolve",
   "MATCH,DIRECT"
 ];
 // 代理组通用配置
